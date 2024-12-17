@@ -1053,9 +1053,9 @@ StScrollBar {
     .calendar .calendar-day.calendar-today {
       color: -st-accent-fg-color !important; }
       .calendar .calendar-day.calendar-today.calendar-day-with-events {
-        background-image: url("resource:///org/gnome/shell/theme/calendar-today.svg") !important; }
+        background-image: url("assets/calendar-today.svg") !important; }
     .calendar .calendar-day.calendar-day-with-events {
-      background-image: url("resource:///org/gnome/shell/theme/calendar-today.svg");
+      background-image: url("assets/calendar-today.svg");
       background-size: contain; }
   .calendar .calendar-day-heading {
     font-weight: bold;
@@ -1454,7 +1454,7 @@ StScrollBar {
 
 /* Welcome dialog */
 .welcome-dialog-image {
-  background-image: url("resource:///org/gnome/shell/theme/gnome-shell-start.svg");
+  background-image: url("assets/gnome-shell-start.svg");
   background-size: contain;
   /* Reasonable maximum dimensions */
   height: 300px;
@@ -2612,7 +2612,7 @@ StScrollBar {
     border-radius: 4px;
     border: 1px solid transparent; }
   .workspace-thumbnails .placeholder {
-    background-image: url("resource:///org/gnome/shell/theme/workspace-placeholder.svg");
+    background-image: url("assets/workspace-placeholder.svg");
     background-size: contain;
     width: 18px; }
 
@@ -3264,7 +3264,7 @@ StScrollBar {
   box-shadow: 0 2px 6px -2px rgba(0, 0, 0, 0.2); }
 
 .window-close, .screenshot-ui-close-button {
-  background-image: url("resource:///org/gnome/shell/theme/close-window.svg");
+  background-image: url("assets/close-window.svg");
   background-size: 32px;
   background-color: transparent;
   box-shadow: none;
@@ -3273,10 +3273,10 @@ StScrollBar {
   width: 32px;
   transition-duration: .2s; }
   .window-close:hover, .screenshot-ui-close-button:hover {
-    background-image: url("resource:///org/gnome/shell/theme/close-window-hover.svg");
+    background-image: url("assets/close-window-hover.svg");
     background-color: transparent; }
   .window-close:active, .screenshot-ui-close-button:active {
-    background-image: url("resource:///org/gnome/shell/theme/close-window-active.svg");
+    background-image: url("assets/close-window-active.svg");
     background-color: transparent;
     color: transparent;
     transition-duration: 0s; }
@@ -3291,14 +3291,14 @@ StScrollBar {
 
 /* Top Bar */
 #panelBox {
-  padding: 5px 12px;
+  padding: 0;
   background: transparent; }
 
 #panel {
-  padding: 0;
+  padding: 1px 0;
   font-size: 90%;
   height: 2em;
-  border-radius: 7px;
+  border-radius: 0;
   background: rgba(0, 0, 0, 0.2);
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
   box-shadow: none; }
@@ -3422,7 +3422,7 @@ StScrollBar {
 .login-dialog,
 .unlock-dialog {
   font-size: 11pt;
-  background: url("resource:///org/gnome/shell/theme/login-background");
+  background: url("assets/login-background");
   background-size: cover; }
   .login-dialog .login-dialog-prompt-entry,
   .unlock-dialog .login-dialog-prompt-entry {
