@@ -127,15 +127,26 @@ launchpad_release: _get_version
 	dput ppa:daniruiz/flat-remix /tmp/$(PKGNAME)/$(PKGNAME)_$(VERSION)_source.changes
 
 generate_changelog: _get_version _get_tag
+ifneq "$(TAG)" ""
+	$(eval TAG := $(shell git describe --abbrev=0 --tags))
+	@echo "Checking if git is in good shape before running generate_changelog"
+	git diff --quiet
+	git diff --cached --quiet
+	@test -z "$$(git ls-files --others --exclude-standard)"
+	@test -z "$$(git ls-files --modified)"
+	@test -z "$$(git ls-files --deleted)"
 	git checkout $(TAG) CHANGELOG
 	mv CHANGELOG CHANGELOG.old
 	echo [$(VERSION)] > CHANGELOG
 	printf "%s\n\n" "$$(git log --reverse --pretty=format:' * %s' $(TAG)..HEAD)" >> CHANGELOG
 	cat CHANGELOG.old >> CHANGELOG
 	rm CHANGELOG.old
-	$$EDITOR CHANGELOG
+	{ [ -n "${EDITOR}" ] && ${EDITOR} "CHANGELOG" ; } || nano "CHANGELOG"
 	git commit CHANGELOG -m "Update CHANGELOG version $(VERSION)"
 	git push origin HEAD
+else
+	@echo "No git tag found, skipping generate_changelog"
+endif
 
 clean:
 	-make -C src clean

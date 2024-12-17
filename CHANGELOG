@@ -1,261 +1,311 @@
+[20241217]
+
 [20241208]
- * Improve gtk4 source code highlighting theme
- * Update upstream code for version 47.2
- * Update theme tweaks
- * Regenerate all themes
- * Remove color variants now that gnome supports accent colors
- * Update build process
- * Remove no longer needed files
- * Update Makefile
+
+* Improve gtk4 source code highlighting theme
+* Update upstream code for version 47.2
+* Update theme tweaks
+* Regenerate all themes
+* Remove color variants now that gnome supports accent colors
+* Update build process
+* Remove no longer needed files
+* Update Makefile
 
 [20240922]
- * Update upstream code to 47.0 release
- * Remove no longer needed switch and checkbox assets
- * Add new missing color variable
- * Update slider tweaks
- * Remove slider-handle-radius
- * Remove css pointing to old assets
- * Regenerate all themes
+
+* Update upstream code to 47.0 release
+* Remove no longer needed switch and checkbox assets
+* Add new missing color variable
+* Update slider tweaks
+* Remove slider-handle-radius
+* Remove css pointing to old assets
+* Regenerate all themes
 
 [20240813]
- * Update for GNOME 46.4
- * Use reverse changes list order in CHANGELOG
+
+* Update for GNOME 46.4
+* Use reverse changes list order in CHANGELOG
 
 [20240721]
- * Generate all theme variants
- * Fix dash-to-dock running-dot
+
+* Generate all theme variants
+* Fix dash-to-dock running-dot
 
 [20240706]
- * Fix dash and grid running-dot position
- * Update upstream code for version 46.3.1
+
+* Fix dash and grid running-dot position
+* Update upstream code for version 46.3.1
 
 [20240526]
- * Regenerate all themes
- * Update gdm theme
+
+* Regenerate all themes
+* Update gdm theme
 
 [20240503]
- * Remove background from list-search-result
+
+* Remove background from list-search-result
 
 [20240418]
- * Regenerate all themes
- * Remove background from icons in dash
- * Remove old code
- * Use less transparent background for hovered apps inside folder-dialog
- * Remove outline in focused search-bar
- * Add outline to popover cards
- * Make dash transparent
+
+* Regenerate all themes
+* Remove background from icons in dash
+* Remove old code
+* Use less transparent background for hovered apps inside folder-dialog
+* Remove outline in focused search-bar
+* Add outline to popover cards
+* Make dash transparent
 
 [20240411]
- * Regenerate all themes
- * Add new color variables
- * Update theme tweaks for GNOME 46
- * Update upstream theme for version 46
+
+* Regenerate all themes
+* Add new color variables
+* Update theme tweaks for GNOME 46
+* Update upstream theme for version 46
 
 [20231026]
- * Update gtk3 sourceview color-themes
- * Update gtk4 sourceview color-themes
- * Remove slider handle
- * Regenerate all themes
- * Update theme tweaks
- * Update upstream theme for version 45
+
+* Update gtk3 sourceview color-themes
+* Update gtk4 sourceview color-themes
+* Remove slider handle
+* Regenerate all themes
+* Update theme tweaks
+* Update upstream theme for version 45
 
 [20230606]
- * Regenerate all themes
- * Update for gnome-shell 44.2
+
+* Regenerate all themes
+* Update for gnome-shell 44.2
 
 [20230508]
- * Ignore error on make install if gnome-shell-theme.gresource.old already exists
+
+* Ignore error on make install if gnome-shell-theme.gresource.old already exists
 
 [20230507]
- * Update gnome-shell version in fedora .spec file
- * Merge remote-tracking branch 'origin/gnome-44'
- * Regenerate all themes
- * Fix app grid text color in light themes
- * Code clean
- * Avoid showing volume and workspace-switcher osd over dash-to-dock
- * Regenerate themes
- * Update _common-tweaks.scss
- * Sync _colors.scss with upstream updates
- * Update upstream code
- * Add color-scheme for gnome-text-editor
+
+* Update gnome-shell version in fedora .spec file
+* Merge remote-tracking branch 'origin/gnome-44'
+* Regenerate all themes
+* Fix app grid text color in light themes
+* Code clean
+* Avoid showing volume and workspace-switcher osd over dash-to-dock
+* Regenerate themes
+* Update _common-tweaks.scss
+* Sync _colors.scss with upstream updates
+* Update upstream code
+* Add color-scheme for gnome-text-editor
 
 [20221107]
- * Regenerate all themes
- * Update tweaks for gnome 43
- * Update upstream code to gnome 43
+
+* Regenerate all themes
+* Update tweaks for gnome 43
+* Update upstream code to gnome 43
 
 [20220622]
- * Match side panel button's border-radius with panel corners
+
+* Match side panel button's border-radius with panel corners
 
 [20220524]
- * Use grey color for selected user in gdm
- * Gnome-Shell: add background for panel-button on mouse-over
+
+* Use grey color for selected user in gdm
+* Gnome-Shell: add background for panel-button on mouse-over
 
 [20220510]
- * Fix calendar legibility caused by em margins
- * Update ubuntu release
+
+* Fix calendar legibility caused by em margins
+* Update ubuntu release
 
 [20220422]
- * Fix Flat-Remix session
+
+* Fix Flat-Remix session
 
 [20220421]
- * Regenerate all themes
- * Update assets for gresources file
- * Update assets
- * Add icon-shadow to dash icons
- * Add patch for keyboard stylesheet
- * Fix indentation
+
+* Regenerate all themes
+* Update assets for gresources file
+* Update assets
+* Add icon-shadow to dash icons
+* Add patch for keyboard stylesheet
+* Fix indentation
 
 [20220407]
- * Update packaging
- * Generate new themes
- * Update theme tweaks for gnome 42
- * Update upstream code to gnome 42
+
+* Update packaging
+* Generate new themes
+* Update theme tweaks for gnome 42
+* Update upstream code to gnome 42
 
 [20211223]
- * Add missing icon checkbox-off-focused-darkest
+
+* Add missing icon checkbox-off-focused-darkest
 
 [20211202]
- * Update for GNOME 41.1
- * Improve background of hovered itens in calendar popover
- * Fix aur release script
+
+* Update for GNOME 41.1
+* Improve background of hovered itens in calendar popover
+* Fix aur release script
 
 [20211113]
- * Improve script to package aur and fedora
- * Package themes by color only
- * Add script to generate custom themes
- * Improve fedora package spec file
- * Add all new color variants
- * Make datemenu-today-button flat
- * Fix Requires value in fedora spec
+
+* Improve script to package aur and fedora
+* Package themes by color only
+* Add script to generate custom themes
+* Improve fedora package spec file
+* Add all new color variants
+* Make datemenu-today-button flat
+* Fix Requires value in fedora spec
 
 [20211105]
- * Make some widgets in the calendar popup more flat
- * Update fedora package dependencies
- * Add gnome-shell-extensions dependency for Ubuntu
- * Update gresource packaged theme
- * Fix gdm theme for Ubuntu
+
+* Make some widgets in the calendar popup more flat
+* Update fedora package dependencies
+* Add gnome-shell-extensions dependency for Ubuntu
+* Update gresource packaged theme
+* Fix gdm theme for Ubuntu
 
 [20211028]
- * Update gresource packaged theme
- * Make folder shadow a bit lighter to improve contrast
- * Update launchpad_release script
- * Update debian packaging
+
+* Update gresource packaged theme
+* Make folder shadow a bit lighter to improve contrast
+* Update launchpad_release script
+* Update debian packaging
 
 [20210921]
- * Update theme for GNOME 41
+
+* Update theme for GNOME 41
 
 [20210716]
- * Fix .app-folder background
+
+* Fix .app-folder background
 
 [20210715]
- * Regenerate themes
- * Recover icon and text shadows now fixed with GNOME 40.3
- * Remove inset shadow from search-entry
- * Fix shadows for gnome 40.3
- * Update GNOME 40.3
+
+* Regenerate themes
+* Recover icon and text shadows now fixed with GNOME 40.3
+* Remove inset shadow from search-entry
+* Fix shadows for gnome 40.3
+* Update GNOME 40.3
 
 [20210623]
- * Improve text and icon shadows to solve issue in GNOME 40
- * Add fedora build-dependency
- * Update sync for gnome 40.2
+
+* Improve text and icon shadows to solve issue in GNOME 40
+* Add fedora build-dependency
+* Update sync for gnome 40.2
 
 [20210524]
- * Regenerate css
- * Update for gnome 40.1
- * Improve code syntax highlighting (fixes #181)
+
+* Regenerate css
+* Update for gnome 40.1
+* Improve code syntax highlighting (fixes #181)
 
 [20210421]
- * Regenerate all theme variants
- * Make osd windows more visible for dark themes
- * Make border-radius more consistent
- * Make borders inside popovers more visible
- * Improve assets for switches
- * Update _colors.scss
- * Make dash separator lighter
- * Change dash background to white
- * Fix window-picker close buttons
- * Remove old code from previous gnome versions
- * Remove styles for previous workspace-indicator extension
- * Reduce base border-radius
+
+* Regenerate all theme variants
+* Make osd windows more visible for dark themes
+* Make border-radius more consistent
+* Make borders inside popovers more visible
+* Improve assets for switches
+* Update _colors.scss
+* Make dash separator lighter
+* Change dash background to white
+* Fix window-picker close buttons
+* Remove old code from previous gnome versions
+* Remove styles for previous workspace-indicator extension
+* Reduce base border-radius
 
 [20210407]
- * Update assets
- * Update CHANGELOG version 20210406
- * Fix workspace thumbnails for GNOME 40
- * Fix panel text-shadow
- * Set login styles to unlock-dialog
- * Remove old gnome 3.36 code
- * Update for GNOME 40
+
+* Update assets
+* Update CHANGELOG version 20210406
+* Fix workspace thumbnails for GNOME 40
+* Fix panel text-shadow
+* Set login styles to unlock-dialog
+* Remove old gnome 3.36 code
+* Update for GNOME 40
 
 [20210309]
- * Fix login background script when sh is linked to dash
+
+* Fix login background script when sh is linked to dash
 
 [20210226]
- * Fix login background script when it's run with sudo
+
+* Fix login background script when it's run with sudo
 
 [20210202]
- * Update for gnome 3.38.3
+
+* Update for gnome 3.38.3
 
 [20210118]
- * Fix calendar event not visible
+
+* Fix calendar event not visible
 
 [20201205]
- * Update for gnome 3.38.2
- * Add gschema configuration for tilix, eof, filechooser & gnome-shell keybindings
+
+* Update for gnome 3.38.2
+* Add gschema configuration for tilix, eof, filechooser & gnome-shell keybindings
 
 [20201117]
- * Fix top bar calendar contrast issue (fixes #165)
- * Add cantarell font as a dependency for ubuntu
+
+* Fix top bar calendar contrast issue (fixes #165)
+* Add cantarell font as a dependency for ubuntu
 
 [20201022]
- * Set flat-remix-gnome as default session
- * Add Flat-Remix code color-schemes
- * Add gschema override
+
+* Set flat-remix-gnome as default session
+* Add Flat-Remix code color-schemes
+* Add gschema override
 
 [20201013]
- * Fix shadows for osd panel
- * Change the background of the search contents
- * Change the background of the app folders to transparent dark
- * Add missing color-pick icon
- * Update gnome 3.38.1
+
+* Fix shadows for osd panel
+* Change the background of the search contents
+* Change the background of the app folders to transparent dark
+* Add missing color-pick icon
+* Update gnome 3.38.1
 
 [20200926]
- * Fix app grid for gnome 3.36
- * Fix calendar-week-number's padding for gnome 3.36
- * Fix frequent apps for gnome 3.36
- * Fix activities' close window button position for gnome 3.36
- * Recover black panel
+
+* Fix app grid for gnome 3.36
+* Fix calendar-week-number's padding for gnome 3.36
+* Fix frequent apps for gnome 3.36
+* Fix activities' close window button position for gnome 3.36
+* Recover black panel
 
 [20200925]
- * Update for gnome-shell 3.38
+
+* Update for gnome-shell 3.38
 
 [20200905]
- * Update for gnome-shell 3.36.5
+
+* Update for gnome-shell 3.36.5
 
 [20200723]
- * Improve app-folder-dialog design
- * Improve app folders background and add shadow
- * Increase border-radius for all corners
- * Improve top-panel design
+
+* Improve app-folder-dialog design
+* Improve app folders background and add shadow
+* Increase border-radius for all corners
+* Improve top-panel design
 
 [20200624]
- * Fix Flat-Remix session not working
- * Fix makefile: include PopOS as Ubuntu
+
+* Fix Flat-Remix session not working
+* Fix makefile: include PopOS as Ubuntu
 
 [20200617]
- * Fix makefile: set Flat-Remix-Blue as the base theme
- * Change assets' colors for each variant
- * Add new color variants to match Flat-Remix GTK themes
- * Update upstream version to 3.36.3
+
+* Fix makefile: set Flat-Remix-Blue as the base theme
+* Change assets' colors for each variant
+* Add new color variants to match Flat-Remix GTK themes
+* Update upstream version to 3.36.3
 
 [20200502]
- * Improve miami-dark switch visibility
- * Update gnome-shell 3.36.2
- * Change window-clone-border color
- * Remove dash-to-dock border Fixes #143
+
+* Improve miami-dark switch visibility
+* Update gnome-shell 3.36.2
+* Change window-clone-border color
+* Remove dash-to-dock border Fixes #143
 
 [20200420]
+
 * Fix gresource file for ubuntu 20.04
 * Update Makefile for Ubuntu installation
 * Transparentize window-clone-border
@@ -265,125 +315,143 @@
 * Add workspace-indicator extension styles
 
 [20200412]
- * Fix osd transparent level bar
- * Remove login entry outline
- * Add shadow to app switcher icons
- * Remove workspace switcher indicator borders
- * Reduce workspace-switcher padding and add shadow to active workspace indicator
- * Improve app switcher
- * Match osd design with pop-overs
- * Increase panel text and icon shadow
- * Change show-apps button background to transparent white
- * Make app folders transparent white
- * Improve workspace pager
- * Remove panel-corner-radius variable
- * Overview window-picker improvements
- * Make search entry transparent
+
+* Fix osd transparent level bar
+* Remove login entry outline
+* Add shadow to app switcher icons
+* Remove workspace switcher indicator borders
+* Reduce workspace-switcher padding and add shadow to active workspace indicator
+* Improve app switcher
+* Match osd design with pop-overs
+* Increase panel text and icon shadow
+* Change show-apps button background to transparent white
+* Make app folders transparent white
+* Improve workspace pager
+* Remove panel-corner-radius variable
+* Overview window-picker improvements
+* Make search entry transparent
 
 [20200405]
- * Add Miami variants
- * Improve searchbar design
- * Use current background image as gdm background
+
+* Add Miami variants
+* Improve searchbar design
+* Use current background image as gdm background
 
 [20200329]
- * Update login screen design
- * Add login background
- * Add gresource file installation to makefile
- * Add gresource file
- * Makefile add install and uninstall rules
- * Remove search results box like background
+
+* Update login screen design
+* Add login background
+* Add gresource file installation to makefile
+* Add gresource file
+* Makefile add install and uninstall rules
+* Remove search results box like background
 
  [20200320]
- * Improve app-view-control buttons
- * Flatten all calendar buttons
- * Change calendar date-label font weight
- * Increase calendar events-section-title padding
- * Flatten calendar
- * Remove slider handle
- * Improve popup-menu-items
- * Use $base_border_radius instead of hardcoded px
- * Round out popup sub-menu
+
+* Improve app-view-control buttons
+* Flatten all calendar buttons
+* Change calendar date-label font weight
+* Increase calendar events-section-title padding
+* Flatten calendar
+* Remove slider handle
+* Improve popup-menu-items
+* Use $base_border_radius instead of hardcoded px
+* Round out popup sub-menu
 
 [20200314]
- * Align right popover with panel end
- * Add missing css files
- * Remove panel button arrows
- * Remove gnome-shell-high-contrast.scss
- * Add fullPanel variant
- * Change panel background to transparent black for all variants
- * Modify overview window close buttons
- * Add shadow to popovers
- * Make dash transparent
- * Configure checkbox light/dark variants
- * Update panel design using Kali themes as reference
- * Reduce font size
- * Initial setup for gnome 3.36
+
+* Align right popover with panel end
+* Add missing css files
+* Remove panel button arrows
+* Remove gnome-shell-high-contrast.scss
+* Add fullPanel variant
+* Change panel background to transparent black for all variants
+* Modify overview window close buttons
+* Add shadow to popovers
+* Make dash transparent
+* Configure checkbox light/dark variants
+* Update panel design using Kali themes as reference
+* Reduce font size
+* Initial setup for gnome 3.36
 
 [20191116]
- * Configure Makefile and package scripts to auto generate login background on install
+
+* Configure Makefile and package scripts to auto generate login background on install
 
 [20191110]
- * Update CHANGELOG version 20191109
- * Fix theme not being applied to gdm
+
+* Update CHANGELOG version 20191109
+* Fix theme not being applied to gdm
 
 [20191109]
- * Add cursor accessibility missing icons
+
+* Add cursor accessibility missing icons
 
 [20191027]
- * Fix build.sh script does not parse URL encoded paths; Fixes #111
- * Improve hotplug notification styles
+
+* Fix build.sh script does not parse URL encoded paths; Fixes #111
+* Improve hotplug notification styles
 
 [20190926]
- * Fix blurry popup menus
+
+* Fix blurry popup menus
 
 [20190925]
- * Improve popup-menu margins for gnome-shell 3.34
+
+* Improve popup-menu margins for gnome-shell 3.34
 
 [20190918]
- * Fix gnome-shell 3.34 colors
- * Add folder editor styles
- * Add folder icon visual drag-over feedback
- * Add horizontal workspaces layout support
- * App icon helper tweaks
- * Increase window overview thumbnail border witdth
- * Provide icon helper classes
- * Don't apply overlap-preventing padding to search results
- * Set search results content max width for gnome-shell 3.34
- * Anotation 'UNTIL GNOME 3.32': custom styling of user submenu icon
- * Add pie-timer styles
- * Add ripple-pointer-location styles
- * Support TCRYPT
- * Move password entry to a grid
- * Remove window-clone-border corner gap
+
+* Fix gnome-shell 3.34 colors
+* Add folder editor styles
+* Add folder icon visual drag-over feedback
+* Add horizontal workspaces layout support
+* App icon helper tweaks
+* Increase window overview thumbnail border witdth
+* Provide icon helper classes
+* Don't apply overlap-preventing padding to search results
+* Set search results content max width for gnome-shell 3.34
+* Anotation 'UNTIL GNOME 3.32': custom styling of user submenu icon
+* Add pie-timer styles
+* Add ripple-pointer-location styles
+* Support TCRYPT
+* Move password entry to a grid
+* Remove window-clone-border corner gap
 
 [20190829]
- * Change lightbox background color to black
+
+* Change lightbox background color to black
 
 [20190822]
- * Fix transparent wifi panel button
- * Change search-entry selected text colors
+
+* Fix transparent wifi panel button
+* Change search-entry selected text colors
 
 [20190814]
- * Change screenShield notification colors
- * Add panel background transition on overview
- * Change app menu and overview colors
- * Remove panel background on overview
+
+* Change screenShield notification colors
+* Add panel background transition on overview
+* Change app menu and overview colors
+* Remove panel background on overview
 
 [20190616]
- * Remove .modal-dialog-linked-button inset shadow for light variant
- * Change ScreenShield notification and app folder background
- * Lighten .modal-dialog-linked-button inset shadow
+
+* Remove .modal-dialog-linked-button inset shadow for light variant
+* Change ScreenShield notification and app folder background
+* Lighten .modal-dialog-linked-button inset shadow
 
 [20190608]
- * Fix Pop OS theme conflicts; Fixes #89
+
+* Fix Pop OS theme conflicts; Fixes #89
 
 [20190530]
- * Remove dialog linked button focus decoration
+
+* Remove dialog linked button focus decoration
 
 [20190514]
- * Use dafault login background if lock image is xml
- * Bring modal-dialog shadow back
- * Fix high contrast switches
- * Syncronize switch assets with gtk theme
- * Add shadow to close icons
 
+* Use dafault login background if lock image is xml
+* Bring modal-dialog shadow back
+* Fix high contrast switches
+* Syncronize switch assets with gtk theme
+* Add shadow to close icons
