@@ -23,16 +23,27 @@ then
   printf "        ${GREEN}Example:${RESET} ${UNDERLINE}$0${RESET} ${ORANGE}FOOBAR '#123456' '#987654'${RESET}                               \n"
   EXIT=1
 fi
+check_dependencies() {
+    local missing=0
+    local -a deps=(make inkscape sassc)
 
-command -v make > /dev/null \
-  || { printf "   ${RED} !! YOU NEED TO INSTALL ${RESET}make\n"; EXIT=1; }
-command -v inkscape > /dev/null \
-  || { printf "   ${RED} !! YOU NEED TO INSTALL ${RESET}inkscape\n"; EXIT=1; }
-command -v sassc > /dev/null \
-  || { printf "   ${RED} !! YOU NEED TO INSTALL ${RESET}sassc\n"; EXIT=1; }
+    for dep in "${deps[@]}"; do
+        if ! command -v "$dep" > /dev/null; then
+            printf "   ${RED} !! YOU NEED TO INSTALL ${RESET}$dep\n"
+            missing=1
+        fi
+    done
 
-command -v optipng > /dev/null \
-  || printf "   ${ORANGE} !! OPTIONALLY INSTALL optipng for assets minification${RESET}"
+    if ! command -v optipng > /dev/null; then
+        printf "   ${ORANGE} !! OPTIONALLY INSTALL optipng for assets minification${RESET}\n"
+    fi
+
+    if [ $missing -eq 1 ]; then
+        EXIT=1
+    fi
+}
+
+check_dependencies
 
 [ -z $EXIT ] || exit 1
 
