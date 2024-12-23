@@ -98,21 +98,6 @@ release: _get_version
 	git push origin --tags
 	$(MAKE) dist
 
-aur_release: _get_version
-	cd aur; \
-	sed "s/pkgver=.*/pkgver=$(VERSION)/" -i PKGBUILD; \
-	sed "s/pkgver =.*/pkgver = $(VERSION)/" -i .SRCINFO; \
-	git commit -a -m "$(VERSION)"; \
-	git push origin master;
-
-	git commit aur -m "Update aur version $(VERSION)"
-	git push origin master
-
-copr_release: _get_version
-	sed "/Version:/c Version: $(VERSION)" -i $(PKGNAME).spec
-	git commit $(PKGNAME).spec -m "Update $(PKGNAME).spec version $(VERSION)"
-	git push origin master
-
 launchpad_release: _get_version
 	rm -rf /tmp/$(PKGNAME)
 	mkdir -p /tmp/$(PKGNAME)/$(PKGNAME)_$(VERSION)
@@ -127,7 +112,7 @@ launchpad_release: _get_version
 	dput ppa:daniruiz/flat-remix /tmp/$(PKGNAME)/$(PKGNAME)_$(VERSION)_source.changes
 
 generate_changelog: _get_version _get_tag
-ifneq "$(TAG)" ""
+ifneq ("$(TAG)",)
 	$(eval TAG := $(shell git describe --abbrev=0 --tags))
 	@echo "Checking if git is in good shape before running generate_changelog"
 	git diff --quiet
@@ -151,4 +136,4 @@ endif
 clean:
 	-make -C src clean
 
-.PHONY: all _get_login_background build install uninstall _get_version _get_tag dist release aur_release copr_release launchpad_release generate_changelog
+.PHONY: all _get_login_background build install uninstall _get_version _get_tag dist release launchpad_release generate_changelog clean
